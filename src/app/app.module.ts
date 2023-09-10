@@ -26,6 +26,12 @@ import { ModalComponent } from './shared/modal/modal.component';
 import { MatDialogModule } from "@angular/material/dialog";
 import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
 import { CardDepoimentoComponent } from './shared/card-depoimento/card-depoimento.component';
+import { HttpClientModule } from "@angular/common/http";
+import { ReactiveFormsModule } from "@angular/forms";
+import { DropdownUfComponent } from './shared/form-busca/dropdown-uf/dropdown-uf.component';
+import { MatAutocompleteModule } from "@angular/material/autocomplete";
+import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-passageiro.component';
+import { DepoimentosComponent } from './pages/home/depoimentos/depoimentos.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +46,10 @@ import { CardDepoimentoComponent } from './shared/card-depoimento/card-depoiment
     FormBuscaComponent,
     ModalComponent,
     BotaoControleComponent,
-    CardDepoimentoComponent
+    CardDepoimentoComponent,
+    DropdownUfComponent,
+    SeletorPassageiroComponent,
+    DepoimentosComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +65,10 @@ import { CardDepoimentoComponent } from './shared/card-depoimento/card-depoiment
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
